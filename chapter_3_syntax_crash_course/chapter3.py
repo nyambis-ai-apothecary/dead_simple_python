@@ -10,5 +10,15 @@ def print_hello_world():
     print("Hello, world!")
 
 
-# Call the function to print the message
+# print() function writes text to the console.
 print_hello_world()
+
+
+def get_input():
+    """Gets input from the console"""
+    name = input("What is your name? ")
+    print("Hello, " + name)
+
+
+# input() function gets input from the console.
+get_input()
