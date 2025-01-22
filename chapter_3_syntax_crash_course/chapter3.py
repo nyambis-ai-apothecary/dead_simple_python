@@ -22,7 +22,8 @@ def statements_and_expressions():
 
     - Each line of code in Python that ends with a line break is a statement.
     - An expression is a section of code that evaluates to a single value.
-    - Assign the expression "Hello, world!" to message and then pass the expression message to print().
+    - Assign the expression "Hello, world!" to message and then pass
+    the expression message to print().
     """
     message = "Hello, world"
     print(message)
@@ -45,8 +46,21 @@ def importance_whitespace():
     print("I am a computer")
 
 
+def pass_placeholder():
+    """
+    The pass statement is a null operation that does nothing.
+    "Doing Nothing": It is used as a placeholder when a statement is required syntactically
+    but you do not want to execute any code.
+    """
+
+    nyambi = True
+    if nyambi:
+        pass
+
+
 if __name__ == "__main__":
     # print_hello_world()
     # get_input()
     # statements_and_expressions()
-    importance_whitespace()
+    # importance_whitespace()
+    pass_placeholder()
