@@ -104,17 +104,17 @@ def defining_variables():
         - But you can update the value of a variable to a different data type.
         """
 
-        foo = 10 # foo is an integer
-        print(f"foo is {foo} and its type is {type(foo)}")
+        value = 10 # value is an integer
+        print(f"value is {value} and its type is {type(value)}")
 
-        foo = float(foo) # foo is now a float
-        print(f"foo is {foo} and its type is {type(foo)}")
+        value = float(value) # value is now a float
+        print(f"value is {value} and its type is {type(value)}")
 
-        foo = str(foo) # foo is now a string
-        print(f"foo is {foo} and its type is {type(foo)}")
+        value = str(value) # value is now a string
+        print(f"value is {value} and its type is {type(value)}")
 
 
-    # demonstrate_variable_assignment()
+    demonstrate_variable_assignment()
     demonstrate_type_change()
 
 def constants_in_python():
@@ -177,6 +177,11 @@ def explore_floats():
     print(f"The area of the circle is {area:.2f}")
 
 def explore_operators():
+    """This function demonstrates the use of operators in Python.
+    - Operators are special symbols that represent computations.
+    - The most common operators are arithmetic operators.
+    """
+
     def common_operators():
         """
         This function demonstrates common operators in Python.
@@ -196,7 +201,6 @@ def explore_operators():
         print(1234 % 149) # modulus (remainder of division)
         print(7 ** 2) # exponentiation
         print((9 + 5) * 3) # parentheses for grouping
-    # common_operators()
 
     def augmented_assignment_operators():
         """
@@ -207,15 +211,34 @@ def explore_operators():
         current value of the variable as the left operand.
         """
 
-        foo = 10
-        foo += 10
-        foo -=5
-        foo *= 16
-        foo //=5
-        foo /=4
-        foo **= 2
-        foo %=51
+        value = 10
+        value += 10
+        value -=5
+        value *= 16
+        value //=5
+        value /=4
+        value **= 2
+        value %=51
+
+    def explore_divmod():
+        """
+        This function demonstrates the divmod() function.
+
+        - The divmod() function takes two numbers and returns a tuple
+        containing the quotient and the remainder.
+        """
+
+        a = 680
+        b = 16
+
+        quotient, remainder = divmod(a, b)
+        print(f"divmod({a}, {b}) = (Quotient: {quotient}, "
+        f"Remainder: {remainder})")
+
+
+    common_operators()
     augmented_assignment_operators()
+    explore_divmod()
 
 if __name__ == "__main__":
     # print_hello_world()
@@ -224,8 +247,8 @@ if __name__ == "__main__":
     # importance_whitespace()
     # pass_placeholder()
     # comments_and_docstrings()
-    defining_variables()
+    # defining_variables()
     # constants_in_python()
     # explore_integers()
     # explore_floats()
-    # explore_operators()
+    explore_operators()
