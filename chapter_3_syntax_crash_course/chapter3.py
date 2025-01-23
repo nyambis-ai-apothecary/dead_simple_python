@@ -129,6 +129,27 @@ def explore_integers():
     number = 42
     print(f"Integer: {number}") # displays 42
 
+def explore_floats():
+    """
+    This function demonstrates the use of floating-point numbers (floats).
+
+    - Floats store numbers with a decimal part (3.141592).
+    - You can also use scientific notation (2.49e4).
+    - Internally, values are stored as double-precision, IEEE 754 
+    floating-point numbers, which are subject to the limits inherent
+    in that format.
+    """
+
+    # Examples of floating-point numbers
+    pi = 3.141592
+    radius = 5.0
+
+    # Calculating the area of a circle using floating-point numbers
+    area = pi * radius ** 2
+
+    # Printing the result with 2 decimal places
+    print(f"The area of the circle is {area:.2f}")
+
 
 if __name__ == "__main__":
     # print_hello_world()
@@ -139,5 +160,5 @@ if __name__ == "__main__":
     # comments_and_docstrings()
     # defining_variables()
     # constants_in_python()
-    explore_integers()
-
+    # explore_integers()
+    explore_floats()
