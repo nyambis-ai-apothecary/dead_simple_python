@@ -57,20 +57,39 @@ def pass_placeholder():
     if nyambi:
         pass
 
+
 def comments_and_docstrings():
     """
     Demonstrate comments and docstrings in Python.
 
     - To write comments in Python, use the hash symbol (#).
-    - Docstrings are used to document modules, classes, functions, and methods. You would typically place docstrings at the top, inside whatever they are defining.
+    - Docstrings are used to document modules, classes, functions,
+    and methods. You would typically place docstrings at the top, inside whatever they are defining.
     """
     # This is a comment
     print("Hello, world!")
-    print("How are you?") # This is an inline comment
+    print("How are you?")  # This is an inline comment
 
     def make_tea():
         """Will produce a concoction almost, but not entirely unlike tea."""
-        pass
+        # ...function logic...
+
+    make_tea()
+
+
+def defining_variables():
+    """
+    Demonstrate defining variables in Python.
+
+    Python is a dynamically typed language, meaning you do 
+    not need to specify the type of a variable.
+    """
+    name = "Jason"
+    points = 4571
+    print(name) # displays Jason
+    print(points) # displays 4571
+    points = 42
+    print(points) # displays 42
 
 
 if __name__ == "__main__":
@@ -79,4 +98,5 @@ if __name__ == "__main__":
     # statements_and_expressions()
     # importance_whitespace()
     # pass_placeholder()
-    comments_and_docstrings()
+    # comments_and_docstrings()
+    defining_variables()
