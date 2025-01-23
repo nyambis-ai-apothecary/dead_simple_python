@@ -57,10 +57,20 @@ def pass_placeholder():
     if nyambi:
         pass
 
+def comments_and_docstrings():
+    # This is a comment
+    print("Hello, world!")
+    print("How are you?") # This is an inline comment
+    
+
+
+
+
 
 if __name__ == "__main__":
     # print_hello_world()
     # get_input()
     # statements_and_expressions()
     # importance_whitespace()
-    pass_placeholder()
+    # pass_placeholder()
+    comments_and_docstrings()
