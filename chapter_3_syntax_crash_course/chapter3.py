@@ -104,6 +104,32 @@ def constants_in_python():
     print(PI) # displays 3.14159
     # PI = 3.14 # This will throw an error
 
+def explore_integers():
+    """
+    This function demonstrates the use of integers
+    in Python.
+
+    Integers are whole numbers (no decimals) and can be positive or negative. 
+    They can be very large without any size limits.
+
+    We'll explore different ways to represent integers:
+    - Decimal (base-10): The usual way we write numbers
+    (e.g., 10, -5)
+
+    - Binary (base-2):  Using '0b' followed by 0s and
+    1s (e.g., 0b1010).
+
+    - Octal (base-8): Using '0o' followed by digits
+    0-7 (e.g., 0o12).
+
+    - Hexadecimal (base-16): Using '0x' followed by
+    digits 0-9 and A-F (e.g., 0xA)
+  """
+
+    number = 42
+    print(f"Integer: {number}") # displays 42
+    
+
 if __name__ == "__main__":
     # print_hello_world()
     # get_input()
@@ -112,4 +138,6 @@ if __name__ == "__main__":
     # pass_placeholder()
     # comments_and_docstrings()
     # defining_variables()
-    constants_in_python()
+    # constants_in_python()
+    explore_integers()
+ 
