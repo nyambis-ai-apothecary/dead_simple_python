@@ -81,21 +81,47 @@ def defining_variables():
     """
     Demonstrate defining variables in Python.
 
-    - Python is a dynamically typed language, meaning you do 
+    - Python is a dynamically typed language, meaning you do
     not need to specify the type of a variable.
     """
-    name = "Jason"
-    points = 4571
-    print(name) # displays Jason
-    print(points) # displays 4571
-    points = 42
-    print(points) # displays 42
+    def demonstrate_variable_assignment():
+        name = "Jason"
+        points = 4571
+        print(name) # displays Jason
+        print(points) # displays 4571
+        points = 42
+        print(points) # displays 42
+
+    # Think Tank: On 'updating' varables by converting data types
+    def demonstrate_type_change():
+        """
+        This function demonstrates updating variable data types.
+
+        - There are two general rules for variables in Python:
+          1. Define a variable before using it.
+          2. Do not change the data type of a variable after defining it.
+
+        - But you can update the value of a variable to a different data type.
+        """
+
+        foo = 10 # foo is an integer
+        print(f"foo is {foo} and its type is {type(foo)}")
+
+        foo = float(foo) # foo is now a float
+        print(f"foo is {foo} and its type is {type(foo)}")
+
+        foo = str(foo) # foo is now a string
+        print(f"foo is {foo} and its type is {type(foo)}")
+
+
+    # demonstrate_variable_assignment()
+    demonstrate_type_change()
 
 def constants_in_python():
     """
     Demonstrate constants in Python.
 
-    - Constants are variables whose values should not be changed 
+    - Constants are variables whose values should not be changed
     once they are set.
     - Python does not have built-in support for constants.
     - However, you can use all uppercase letters to indicate a variable is a constant.
@@ -109,7 +135,7 @@ def explore_integers():
     This function demonstrates the use of integers
     in Python.
 
-    Integers are whole numbers (no decimals) and can be positive or negative. 
+    Integers are whole numbers (no decimals) and can be positive or negative.
     They can be very large without any size limits.
 
     We'll explore different ways to represent integers:
@@ -135,7 +161,7 @@ def explore_floats():
 
     - Floats store numbers with a decimal part (3.141592).
     - You can also use scientific notation (2.49e4).
-    - Internally, values are stored as double-precision, IEEE 754 
+    - Internally, values are stored as double-precision, IEEE 754
     floating-point numbers, which are subject to the limits inherent
     in that format.
     """
@@ -150,6 +176,46 @@ def explore_floats():
     # Printing the result with 2 decimal places
     print(f"The area of the circle is {area:.2f}")
 
+def explore_operators():
+    def common_operators():
+        """
+        This function demonstrates common operators in Python.
+
+        - Operators are special symbols that represent
+          computations.
+
+        """
+
+        print(-42) # negative (unary)
+        print(abs(-42)) # absolute value
+        print(40 + 2) # addition
+        print(44 - 2) # subtraction
+        print(21 * 2) # multiplication
+        print(680 / 16) # division
+        print(680 // 16) # floor division (no remainder)
+        print(1234 % 149) # modulus (remainder of division)
+        print(7 ** 2) # exponentiation
+        print((9 + 5) * 3) # parentheses for grouping
+    # common_operators()
+
+    def augmented_assignment_operators():
+        """
+        This function demonstrates augmented assignment
+        operators (compound operators).
+
+        - These allow you to perform an operation with the
+        current value of the variable as the left operand.
+        """
+
+        foo = 10
+        foo += 10
+        foo -=5
+        foo *= 16
+        foo //=5
+        foo /=4
+        foo **= 2
+        foo %=51
+    augmented_assignment_operators()
 
 if __name__ == "__main__":
     # print_hello_world()
@@ -158,7 +224,8 @@ if __name__ == "__main__":
     # importance_whitespace()
     # pass_placeholder()
     # comments_and_docstrings()
-    # defining_variables()
+    defining_variables()
     # constants_in_python()
     # explore_integers()
-    explore_floats()
+    # explore_floats()
+    # explore_operators()
