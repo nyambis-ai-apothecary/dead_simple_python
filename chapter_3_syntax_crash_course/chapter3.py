@@ -128,7 +128,7 @@ def explore_integers():
 
     number = 42
     print(f"Integer: {number}") # displays 42
-    
+
 
 if __name__ == "__main__":
     # print_hello_world()
@@ -140,4 +140,5 @@ if __name__ == "__main__":
     # defining_variables()
     # constants_in_python()
     explore_integers()
- 
+
+#adding this comment to test git alias
