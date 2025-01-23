@@ -81,7 +81,7 @@ def defining_variables():
     """
     Demonstrate defining variables in Python.
 
-    Python is a dynamically typed language, meaning you do 
+    - Python is a dynamically typed language, meaning you do 
     not need to specify the type of a variable.
     """
     name = "Jason"
@@ -91,6 +91,18 @@ def defining_variables():
     points = 42
     print(points) # displays 42
 
+def constants_in_python():
+    """
+    Demonstrate constants in Python.
+
+    - Constants are variables whose values should not be changed 
+    once they are set.
+    - Python does not have built-in support for constants.
+    - However, you can use all uppercase letters to indicate a variable is a constant.
+    """
+    PI = 3.14159 #pylint: disable=invalid-name
+    print(PI) # displays 3.14159
+    # PI = 3.14 # This will throw an error
 
 if __name__ == "__main__":
     # print_hello_world()
@@ -99,4 +111,5 @@ if __name__ == "__main__":
     # importance_whitespace()
     # pass_placeholder()
     # comments_and_docstrings()
-    defining_variables()
+    # defining_variables()
+    constants_in_python()
