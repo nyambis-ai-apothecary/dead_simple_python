@@ -3,7 +3,7 @@
 '''
  Used this to test reformatting with 'Black'
 original code (spacing issue):
-x="yp" 
+x="yp"
 '''
 x = "yp"
 
