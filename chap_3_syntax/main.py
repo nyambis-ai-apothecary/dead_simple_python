@@ -14,6 +14,7 @@ from step_06_variables_constants import defining_variables, constants_in_python
 from step_07_number_types import explore_integers, explore_floats
 from step_08_operators import explore_operators
 from step_09_math_module import the_math_module
+from step_10_logic import conditional_statements, comparison_operators
 
 
 def main():
@@ -30,6 +31,8 @@ def main():
     the_math_module()
     pass_placeholder()
     comments_docstrings()
+    conditional_statements()
+    comparison_operators()
 
 
 if __name__ == "__main__":
